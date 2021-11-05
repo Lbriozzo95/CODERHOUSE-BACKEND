@@ -1,0 +1,20 @@
+[
+  {
+    "id": "YHS1M58",
+    "title": "Swimwear Mohana",
+    "price": 2980,
+    "thumbnail": "https://www.pngall.com/wp-content/uploads/5/Swimsuit-Bikini-Transparent.png"
+  },
+  {
+    "id": "DM52N3Z",
+    "title": "Swimwear Kahooo",
+    "price": 3280,
+    "thumbnail": "https://media.karousell.com/media/photos/products/2020/12/15/swimwears_swimsuits_1608001211_18d8adf8_progressive.jpg"
+  },
+  {
+    "id": "5JY8SYF",
+    "title": "Swimwear Tao",
+    "price": 3260,
+    "thumbnail": "https://media.karousell.com/media/photos/products/2020/12/15/swimwears_swimsuits_1608001211_883e5fb9_progressive.jpg"
+  }
+]
