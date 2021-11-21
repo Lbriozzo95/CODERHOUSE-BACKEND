@@ -1,5 +1,6 @@
 const fs = require('fs');
 const makeId = require('../utils');
+const makeIdNumber = require('../utils')
 
 
 class Products{ 
@@ -66,10 +67,10 @@ async getAllProducts (products){
    try{ 
     let data = await fs.promises.readFile('./files/productos.txt', 'utf-8')
     let products = JSON.parse(data);
-    console.log(products)
+    return {status:"Success", products}
 }
     catch(error){
-        console.log(error)
+        return {status:"Error", message:"Ups..No se pudieron obtener los productos"+error}
     }
 }
 
@@ -98,12 +99,29 @@ async deleteFile(product){
         
     }
     catch(error){
-        console.log("Algo anduvo mal tratando de eliminar el archivo "+error)
+        return {status:"Error", message:"Ups, hubo un problema para eliminar el archivo "+error}
+        // console.log("Algo anduvo mal tratando de eliminar el archivo "+error)
 
     }
 }
 
+async getRandomProduct(product){
+    let contRandom = 0;
 
+    try{
+
+    contRandom++;
+    let data = await fs.promises.readFile('./files/productos.txt', 'utf-8');
+    let products = JSON.parse(data);
+    let numeroAleatorio = Math.floor(Math.random() * products.length)
+    let productoRandom = products[numeroAleatorio];
+    
+    return {status:"Success", productoRandom}
+    }
+    catch(error){
+        return {status:"Error", message:"Error, Algo anduvo mal "+error}
+    }
+}
 }
 
 module.exports = Products;
