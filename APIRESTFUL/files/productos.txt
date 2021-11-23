@@ -1,0 +1,19 @@
+[
+  {
+    "id": "9IIHALU",
+    "price": null,
+    "thumbnail": "http://localhost:3535/images/1637688138431image.jpeg"
+  },
+  {
+    "id": "FQHEMZ5",
+    "title": "Swimwear",
+    "price": 4524,
+    "thumbnail": "prueba"
+  }
+  {
+    "id": "RSN4MZ7",
+    "title": "Swimwear Tahana",
+    "price": 4524,
+    "thumbnail": "prueba2"
+  }
+]
